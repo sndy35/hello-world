@@ -51,7 +51,7 @@
   },
   "startScreen": {
     "promoImageSize": "default",
-    "showPlayButton": false,
+    "showPlayButton": true,
     "playButtonPosition": "center",
     "playIconStyle": {
       "color": "white",
@@ -60,29 +60,29 @@
     "showTitle": true,
     "showDescription": true,
     "titleFont": {
-      "color": "red"
+      "color": "white"
     },
     "descriptionFont": {
-      "color": "red"
+      "color": "white"
     },
-    "infoPanelPosition": "topRight",
+    "infoPanelPosition": "topLeft",
     "showPromo": true
   },
   "pauseScreen": {
-    "showPauseIcon": false,
+    "showPauseIcon": true,
     "pauseIconPosition": "center",
     "PauseIconStyle": {
       "color": "white",
       "opacity": 1
     },
-    "showTitle": false,
+    "showTitle": true,
     "showDescription": true,
     "infoPanelPosition": "topLeft",
     "screenToShowOnPause": "default"
   },
   "endScreen": {
-    "screenToShowOnEnd": "default",
-    "showReplayButton": false,
+    "screenToShowOnEnd": "discovery",
+    "showReplayButton": true,
     "replayIconStyle": {
       "color": "white",
       "opacity": 1
@@ -124,7 +124,7 @@
     "brightOpacity": 1.0,
     "darkOpacity": 0.4,
     "iconSize": 30,
-    "color": "white",
+    "color": "red",
     "iconStyle": {
       "active": {
         "color": "#FFFFFF",
@@ -139,18 +139,18 @@
   "closedCaptionOptions": {
     "enabled": true,
     "language": "en",
-    "textColor": "White",
+    "textColor": "Red",
     "windowColor": "Transparent",
-    "backgroundColor": "Black",
+    "backgroundColor": "Yellow",
     "textOpacity": 1,
     "backgroundOpacity": 0.6,
     "windowOpacity": 0,
     "fontType": "Proportional Sans-Serif",
-    "fontSize": "Medium",
+    "fontSize": "Large",
     "textEnhancement": "Uniform"
   },
   "upNext": {
-    "showUpNext": false,
+    "showUpNext": true,
     "timeToShow": 10
   },
   "controlBar": {
@@ -167,7 +167,7 @@
         "opacity": 0.95
       }
     },
-    "autoHide": false,
+    "autoHide": true,
     "height": 90,
     "logo": {
       "imageResource": {"url": "","androidResource": "logo","iosResource": "logo"},
@@ -193,16 +193,21 @@
     }
   },
   "live": {
-    "forceDvrDisabled": true
+    "forceDvrDisabled": false
   },
   "buttons": {
     "desktopContent": [
-
-
-
-
-
-
+      {"name":"playPause", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":45 },
+      {"name":"volume", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":240 },
+      {"name":"live", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":45},
+      {"name":"timeDuration", "location":"controlBar", "whenDoesNotFit":"drop", "minWidth":145 },
+      {"name":"flexibleSpace", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":1 },
+      {"name":"share", "location":"moreOptions", "whenDoesNotFit":"moveToMoreOptions", "minWidth":45 },
+      {"name":"discovery", "location":"moreOptions", "whenDoesNotFit":"moveToMoreOptions", "minWidth":45 },
+      {"name":"closedCaption", "location":"moreOptions", "whenDoesNotFit":"moveToMoreOptions", "minWidth":45 },
+      {"name":"quality", "location":"moreOptions", "whenDoesNotFit":"moveToMoreOptions", "minWidth":45 },
+      {"name":"logo", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":125 },
+      {"name":"fullscreen", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":45 },
       {"name":"moreOptions", "location":"controlBar", "whenDoesNotFit":"keep", "minWidth":45 }
     ],
     "desktopAd": [
