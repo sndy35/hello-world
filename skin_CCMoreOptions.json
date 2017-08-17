@@ -193,7 +193,7 @@
     }
   },
   "live": {
-    "forceDvrDisabled": false
+    "forceDvrDisabled": true
   },
   "buttons": {
     "desktopContent": [
